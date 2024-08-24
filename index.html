@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <h1>Users</h1>
+        <input class="inpSearch" placeholder="Search by name" type="search">
+        <button class="btnAdd">+ NEW USER</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Verified</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody class="box"></tbody>
+    </table>
+
+    <dialog class="AddDialog">
+        <form class="AddForm">
+            <button>submit</button>
+            <input name="AddImg" placeholder="Add url of img" type="text">
+            <input name="AddName" placeholder="Add name" type="text">
+            <input name="AddCompany" placeholder="Add Company" type="text">
+            <input name="AddRole" placeholder="Add Role" type="text">
+            <input name="AddVerified" placeholder="Add Verified" type="text">
+        </form>
+        <button class="AddClose">close</button>
+    </dialog>
+
+
+    <dialog class="EditDialog">
+        <form class="EditForm">
+            <button>submit</button>
+            <input name="EditImg" placeholder="Edit url of img" type="text">
+            <input name="EditName" placeholder="Edit name" type="text">
+            <input name="EditCompany" placeholder="Edit Company" type="text">
+            <input name="EditRole" placeholder="Edit Role" type="text">
+            <input name="EditVerified" placeholder="Edit Verified" type="text">
+        </form>
+        <button class="EditClose">close</button>
+    </dialog>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
