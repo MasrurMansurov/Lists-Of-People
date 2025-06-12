@@ -1,6 +1,6 @@
-const Api = "https://66b99bf3fa763ff550f8d727.mockapi.io/API"
-
 import getData from "./dom.js"
+
+const Api = "https://66b99bf3fa763ff550f8d727.mockapi.io/API"
 
 async function Get(searchWord){
     try {

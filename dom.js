@@ -113,7 +113,7 @@ function getData(data){
         tdCompany.innerHTML = e.company
         tdRole.innerHTML = e.role
         tdVerified.innerHTML = e.verified
-        tdStatus.innerHTML = e.status?"Active":"Banned"
+        tdStatus.innerHTML = e.status ? "Active" : "Banned"
         btnEdit.innerHTML = "Edit"
         btnDelete.innerHTML = "Delete"
 
